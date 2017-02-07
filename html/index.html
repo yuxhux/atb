@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <h1>Test image uploading</h1>
+        <p>
+            HTML form element can be used to upload images. The enctype -attribute of the form -element needs to be given to "multipart/form-data"
+            when you are sending files and have an input element with type="file" in the form. Other options are "application/x-www-form-urlencoded" (the default in form)
+            and "text/plain". 
+        </p>
+        <h2>Form to test image uploading</h2>
+        <form action="https://image-upload-example-server.herokuapp.com/upload" method="post" enctype="multipart/form-data">
+          <input type="file" name="image">
+          <button type="submit">Send</button>
+        </form> 
+    </body>
+</html>
